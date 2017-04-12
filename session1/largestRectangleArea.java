@@ -14,7 +14,6 @@ public class Solution {
                 int j = stack.isEmpty() ? -1 : stack.peek();
                 res = Math.max(res, (i - j - 1) * val);
             }
-
             stack.push(i);
         }
         return res;
